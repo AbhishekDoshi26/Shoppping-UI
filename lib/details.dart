@@ -83,7 +83,7 @@ class Details extends StatelessWidget {
                   onTap: () => Navigator.of(context).push(
                     PageTransition(
                       type: PageTransitionType.slideInLeft,
-                      duration: Duration(milliseconds: 800),
+                      duration: Duration(milliseconds: 500),
                       child: Screen(),
                     ),
                   ),

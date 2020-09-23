@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shopping_ui/details.dart';
-import 'package:shopping_ui/screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,7 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Details(),
-      darkTheme: ThemeData.dark(),
+      darkTheme: ThemeData.dark().copyWith(
+        canvasColor: Colors.transparent,
+      ),
     );
   }
 }
